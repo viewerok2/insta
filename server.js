@@ -11,7 +11,7 @@ res.end(data);
 }
 
 else if (req.url === '/imagen.png') {
-fs.readFile('logomp.png', (err, data) => {
+fs.readFile('imagen.png', (err, data) => {
 res.writeHead(200, { 'Content-Type': 'image/png' });
 res.end(data);
 });
